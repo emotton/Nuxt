@@ -13,6 +13,7 @@
 <script>
 export default {
   name: "ListagemPage",
+  layout: "teste",
   data() {
     return {
       nome: "Eduardo Motton",

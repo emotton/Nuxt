@@ -25,6 +25,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '@/plugins/my-plugin'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -32,8 +33,6 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify'
   ],
@@ -67,6 +66,10 @@ export default {
         }
       }
     }
+  },
+
+  router: {
+    middleware: 'test'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
